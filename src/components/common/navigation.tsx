@@ -1,0 +1,42 @@
+import * as React from 'react';
+import nav_logo from '../../../public/logo-test-english-web-home.webp'
+import search from '../../../public/search.svg'
+import Image from 'next/image';
+import Link from 'next/link'
+
+export default function Navigation() {
+  return (
+    <nav className='flex items-center justify-between bg-[#293039ed]'>
+      <Link href='' className='block p-3.5'>
+        <Image
+          src={nav_logo}
+          alt="Nav logo"
+          width={174}
+          height={29}
+        />
+      </Link>
+      <div>
+        <ul className='flex'>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Grammar</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Vocabulary</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Listening</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Reading</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Use of English</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Writing</Link></li>
+          <li><Link href={'#'} className='p-2 mx-1.5 text-base font-semibold text-white'>Exams</Link></li>
+        </ul>
+      </div>
+      <div className='flex items-center mr-4'>
+        <Image
+          src={search}
+          alt="Search"
+          width={37}
+          height={37}
+        />
+        <Link href={'#'} className='px-1.5 py-1 rounded-xl text-base font-semibold text-white ml-4 border border-2 '>
+          Login
+        </Link>
+      </div>
+    </nav>
+  );
+}
