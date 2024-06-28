@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Transition */
+.transition{
+  transition: all .25s;
+}
