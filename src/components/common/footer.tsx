@@ -1,9 +1,4 @@
 import * as React from 'react';
-import logo from '../../../public/logo-test-english-web-home.webp'
-import instagram from '../../../public/instagram.svg'
-import facebook from '../../../public/facebook.svg'
-import twitter from '../../../public/twitter.svg'
-import youtube from '../../../public/youtube.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -18,7 +13,7 @@ export default function Footer(props: IFooterProps) {
           <div className='px-9 py-3.5'>
             <Link href={'/'}>
               <Image
-                src={logo}
+                src='/logo-test-english-web-home.webp'
                 alt='Test english'
                 width={136}
                 height={22}
@@ -88,7 +83,7 @@ export default function Footer(props: IFooterProps) {
           <div className='flex justify-between items-center mt-9 mb-4.5'>
             <a className='p-2.5 transition hover:bg-c-testenglish' href="https://www.instagram.com/testenglishcom/" target="_blank">
               <Image
-                src={instagram}
+                src='/instagram.svg'
                 alt='Follow us at Instagram'
                 width={20}
                 height={20}
@@ -96,7 +91,7 @@ export default function Footer(props: IFooterProps) {
             </a>
             <a className='p-2.5 transition hover:bg-c-testenglish' href="https://www.facebook.com/testenglishcom" target="_blank">
               <Image
-                src={facebook}
+                src='/facebook.svg'
                 alt='Follow us at Facebook'
                 width={20}
                 height={20}
@@ -104,7 +99,7 @@ export default function Footer(props: IFooterProps) {
             </a>
             <a className='p-2.5 transition hover:bg-c-testenglish' href="https://twitter.com/testenglishcom" target="_blank">
               <Image
-                src={twitter}
+                src='/twitter.svg'
                 alt='Follow us at Twitter'
                 width={20}
                 height={20}
@@ -112,7 +107,7 @@ export default function Footer(props: IFooterProps) {
             </a>
             <a className='p-2.5 transition hover:bg-c-testenglish' href="https://www.youtube.com/channel/UCHUG1E9lZVUf4RDvyMP0UeQ" target="_blank">
               <Image
-                src={youtube}
+                src='/youtube.svg'
                 alt='Test English Youtube'
                 width={20}
                 height={20}

@@ -1,6 +1,4 @@
 import * as React from 'react';
-import nav_logo from '../../../public/logo-test-english-web-home.webp'
-import search from '../../../public/search.svg'
 import Image from 'next/image';
 import Link from 'next/link'
 
@@ -9,7 +7,7 @@ export default function Navigation() {
     <nav className='flex items-center justify-between bg-[#293039ed]'>
       <Link href='' className='block p-3.5'>
         <Image
-          src={nav_logo}
+          src='/logo-test-english-web-home.webp'
           alt="Nav logo"
           width={174}
           height={29}
@@ -28,7 +26,7 @@ export default function Navigation() {
       </div>
       <div className='flex items-center mr-4'>
         <Image
-          src={search}
+          src='/search.svg'
           alt="Search"
           width={37}
           height={37}
