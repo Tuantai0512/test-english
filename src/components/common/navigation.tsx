@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Navigation() {
   return (
-    <nav className='flex items-center justify-between bg-[#293039ed]'>
+    <nav className='fixed top-0 z-10 flex items-center justify-between bg-[#293039ed] w-full'>
       <Link href='' className='block p-3.5'>
         <Image
           src='/logo-test-english-web-home.webp'
